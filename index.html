@@ -43,7 +43,7 @@
             const api = `c54eef4704f9a8ea6bbaf76340764af2`;
             const inputValue = document.getElementById("input-value").value;
             const location = document.getElementById("place").innerText = inputValue;
-            fetch(`http://api.openweathermap.org/data/2.5/weather?q=${location}&appid=${api}`)
+            fetch(`https://api.openweathermap.org/data/2.5/weather?q=${location}&appid=${api}`)
                 .then(res => res.json())
                 .then(data => {
                     const temp = data.main.temp;  
